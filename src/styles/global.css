@@ -19,3 +19,71 @@ h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
 }
+.menu {
+  background-color: #0d0950;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.nav-links{
+  width: 100%;
+  display: none;
+  margin: 0;
+  list-style: none;
+
+    padding-inline-start: 15px;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+
+}
+
+.nav-links li{
+  display: block;
+    padding: 10px 0px;
+
+    padding-inline-start: 15px;
+  
+}
+.nav-links li a{
+  text-decoration: none;
+  text-align: center;
+
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0d0950;
+
+}
+.nav-links li a:hover, .nav-links li a:focus{
+  background-color: #ff9776;
+}
+:has(.menu[aria-expanded="true"]) .nav-links {
+  display: unset;
+}
+img{
+  aspect-ratio: 16 /9;
+  width: min(340px, 100%);
+  
+}
+@media screen and (min-width: 636px){
+    .nav-links{
+      margin-left: 5em;
+      display: inline-block;
+      position: static;
+      width: auto;
+      background: none;
+    }
+    .nav-links li{
+      display: inline-block;
+    }
+    .nav-links li a {
+     
+      padding: 15px 20px;
+    }
+    .menu {
+    display: none;
+  }
+}
